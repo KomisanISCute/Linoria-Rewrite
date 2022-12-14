@@ -1,5 +1,5 @@
-if game:GetService("CoreGui"):FindFirstChild("QuartyzHub") then
-    game:GetService("CoreGui"):FindFirstChild("QuartyzHub"):Destroy()
+if game:GetService("CoreGui"):FindFirstChild("Kenei") then
+    game:GetService("CoreGui"):FindFirstChild("Kenei"):Destroy()
 end
 
 local InputService = game:GetService('UserInputService');
@@ -19,7 +19,7 @@ ProtectGui(ScreenGui);
 
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
 ScreenGui.Parent = CoreGui;
-ScreenGui.Name = "QuartyzHub"
+ScreenGui.Name = "Kenei"
 
 local Toggles = {};
 local Options = {};
