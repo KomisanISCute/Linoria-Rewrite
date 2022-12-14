@@ -1,19 +1,12 @@
--- New example script written by wally
--- You can suggest changes with a pull request or something
 
-local repo = 'https://raw.githubusercontent.com/KomisanISCute/main/LinoriaLib/'
+local Repository = 'https://raw.githubusercontent.com/KomisanISCute/Linoria-Rewrite/main/'
 
-local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
-local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
-local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
+local Library = loadstring(game:HttpGet(tostring(Repository) .. 'Library.lua',true))()
+local ThemeManager = loadstring(game:HttpGet(tostring(Repository) .. 'addons/ThemeManager.lua',true))()
+local SaveManager = loadstring(game:HttpGet(tostring(Repository) .. 'addons/SaveManager.lua',true))()
 
 local Window = Library:CreateWindow({
-    -- Set Center to true if you want the menu to appear in the center
-    -- Set AutoShow to true if you want the menu to appear when it is created
-    -- Position and Size are also valid options here
-    -- but you do not need to define them unless you are changing them :)
-
-    Title = 'Linoria Rewrite',
+    Title = 'LUNAR HUB',
     Center = true, 
     AutoShow = true,
 })
@@ -21,24 +14,19 @@ local Window = Library:CreateWindow({
 -- You do not have to set your tabs & groups up this way, just a prefrence.
 local Tabs = {
     -- Creates a new tab titled Main
-    Main = Window:AddTab('Main'), 
+    General = Window:AddTab('Generals'), 
     ['UI Settings'] = Window:AddTab('UI Theme'),
 }
 
 -- Groupbox and Tabbox inherit the same functions
 -- except Tabboxes you have to call the functions on a tab (Tabbox:AddTab(name))
-local LeftGroupBox = Tabs.Main:AddLeftGroupbox('Groupbox')
-
--- Tabboxes are a tiny bit different, but here's a basic example:
---[[
-
+local LeftGroupBox = Tabs.General:AddLeftGroupbox('Groupbox')
 local TabBox = Tabs.Main:AddLeftTabbox() -- Add Tabbox on left side
 
-local Tab1 = TabBox:AddTab('Tab 1')
-local Tab2 = TabBox:AddTab('Tab 2')
+local Tab1 = TabBox:AddTab('Auto Farm')
+local Tab2 = TabBox:AddTab('Mastery')
 
--- You can now call AddToggle, etc on the tabs you added to the Tabbox
-]]
+
 
 -- Groupbox:AddToggle
 -- Arguments: Index, Options
