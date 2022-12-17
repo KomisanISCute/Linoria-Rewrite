@@ -245,7 +245,7 @@ local ThemeManager = {} do
 		assert(self.Library, 'Must set ThemeManager.Library first!')
 		self:CreateThemeManager(groupbox)
 	end
-
+	self:ApplyTheme(Options.ThemeManager_CustomThemeList.Value) 
 	ThemeManager:BuildFolderTree()
 end
 return ThemeManager
