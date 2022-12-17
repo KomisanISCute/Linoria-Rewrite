@@ -247,6 +247,5 @@ local ThemeManager = {} do
 	end
 
 	ThemeManager:BuildFolderTree()
-	self:ApplyTheme(Options.ThemeManager_CustomThemeList.Value) 
 end
 return ThemeManager
