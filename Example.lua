@@ -21,7 +21,7 @@ local Tabs = {
 -- Groupbox and Tabbox inherit the same functions
 -- except Tabboxes you have to call the functions on a tab (Tabbox:AddTab(name))
 local LeftGroupBox = Tabs.General:AddLeftGroupbox('Groupbox')
-local TabBox = Tabs.Main:AddLeftTabbox() -- Add Tabbox on left side
+local TabBox = Tabs.General:AddLeftTabbox() -- Add Tabbox on left side
 
 local Tab1 = TabBox:AddTab('Auto Farm')
 local Tab2 = TabBox:AddTab('Mastery')
